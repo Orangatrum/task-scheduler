@@ -1,7 +1,5 @@
 # Modular Task Scheduler & Priority Queue Engine
 
-A decoupled, Java-based Task Scheduling Engine built with a Priority Queue and JSON file persistence. Designed following clean architecture principles (Model-Engine-UI-Storage).
-
 ## Features
 - **Priority Queue Processing:** Dynamically orders tasks based on priority (`HIGH`, `MEDIUM`, `LOW`) and due date.
 - **Persistent Storage:** Saves and loads state seamlessly using JSON via Google Gson.
