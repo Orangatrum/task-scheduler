@@ -34,7 +34,7 @@ public class Task implements Comparable<Task> {
 
     @Override
     public String toString() {
-        return String.format("[%s] %s | Priority: %s | Due: %s | Completed: %s",
+        return String.format("ID: [%s] %s | Priority: %s | Due: %s | Completed: %s",
                 id, title, priority, dueDate, isCompleted);
     }
 }
