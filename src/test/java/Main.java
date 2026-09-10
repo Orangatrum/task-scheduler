@@ -5,12 +5,17 @@ import java.util.*;
 import model.*;
 import engine.*;
 import model.Priority;
-
+import storage.*;
 public class Main {
 
 	public static void main(String[] args) {
 		TaskScheduler scheduler = new TaskScheduler();
-		
+		List<Task> loadedTasks = FileHandler.loadTasksFromFile();
+		if (loadedTasks != null) {
+		    for (Task t : loadedTasks) {
+		        scheduler.addTask(t);
+		    }
+		}
 		int option = 0;
 		Scanner scanner = new Scanner(System.in);
 		
@@ -84,6 +89,7 @@ public class Main {
 			break;
 		case 5:
 			System.out.println("Exiting!");
+			FileHandler.saveTasksToFile(scheduler.ListQueues());
 			scanner.close();
 			break;
 		default:
