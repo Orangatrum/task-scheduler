@@ -1,13 +1,13 @@
 package model;
 import java.time.LocalDate;
-public class task implements Comparable<task> {
+public class Task implements Comparable<Task> {
     private String id;
     private String title;
     private Priority priority;
     private LocalDate dueDate;
     private boolean isCompleted;
 
-    public task(String id, String title, Priority priority, LocalDate dueDate) {
+    public Task(String id, String title, Priority priority, LocalDate dueDate) {
         this.id = id;
         this.title = title;
         this.priority = priority;
@@ -16,7 +16,7 @@ public class task implements Comparable<task> {
     }
 
     // Compare tasks based on Priority level first, then Due Date
-    public int compareTo(task other) {
+    public int compareTo(Task other) {
         int priorityComparison = Integer.compare(this.priority.getLevel(), other.priority.getLevel());
         if (priorityComparison != 0) {
             return priorityComparison;
