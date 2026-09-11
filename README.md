@@ -39,16 +39,6 @@ The application follows a modular five-layer architecture (`model`, `engine`, `s
 | `GET` | `/api/tasks/top` | Peek at the highest priority task without dequeuing |
 | `DELETE` | `/api/tasks/top` | Dequeue (complete) the highest priority task |
 
-#### Example Request: Create a Task (`POST /api/tasks`)
-
-```json
-{
-  "id": "1a2b3c4d",
-  "description": "Prepare for Technical Interview",
-  "priority": "HIGH",
-  "dueDate": "2026-09-15"
-}
-
 ## How to Run
 
 ### Prerequisites
@@ -59,3 +49,14 @@ The application follows a modular five-layer architecture (`model`, `engine`, `s
 1. Clone the repository:
    ```bash
    git clone [https://github.com/your-username/task-scheduler-engine.git](https://github.com/your-username/task-scheduler-engine.git)
+#### Example Request: Create a Task (`POST /api/tasks`)
+
+```json
+{
+  "id": "1a2b3c4d",
+  "description": "Prepare for Technical Interview",
+  "priority": "HIGH",
+  "dueDate": "2026-09-15"
+}
+
+
