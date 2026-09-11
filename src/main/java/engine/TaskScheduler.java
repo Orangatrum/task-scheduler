@@ -1,11 +1,13 @@
 package engine;
 import java.util.*; //used for iterator
+
 import java.util.PriorityQueue;
 import model.*; //importing the model package
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+
 public class TaskScheduler {
 	PriorityQueue<Task> taskQueue = new PriorityQueue<>(1);
 	
