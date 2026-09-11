@@ -70,7 +70,7 @@ class TaskSchedulerTest {
         Task pulledSecond = scheduler.pull();
         assertEquals(task1, pulledSecond);
 
-        // Queue should now be empty
+        // queue should now be empty
         assertNull(scheduler.pull());
     }
 }
