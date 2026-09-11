@@ -1,13 +1,16 @@
-package ui;
+package com.taskscheduler.ui;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.*;
-import model.*;
-import engine.*;
-import model.Priority;
-import storage.*;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+import com.taskscheduler.engine.TaskScheduler;
+import com.taskscheduler.model.Priority;
+import com.taskscheduler.model.Task;
+import com.taskscheduler.storage.FileHandler;
 public class Main {
 
 	public static void main(String[] args) {

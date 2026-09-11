@@ -1,16 +1,16 @@
 
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.time.LocalDate;
-import java.util.List;
-import model.Priority;
-import model.Task;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import engine.TaskScheduler;
+import com.taskscheduler.model.Priority;
+import com.taskscheduler.model.Task;
+import com.taskscheduler.engine.TaskScheduler;
 class TaskSchedulerTest {
 	private TaskScheduler scheduler;
 

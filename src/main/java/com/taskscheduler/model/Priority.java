@@ -1,4 +1,4 @@
-package model;
+package com.taskscheduler.model;
 
 
 	// this enum represents an individual task object (title, priority, deadline)

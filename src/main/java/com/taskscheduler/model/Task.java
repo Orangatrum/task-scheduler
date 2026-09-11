@@ -1,4 +1,4 @@
-package model;
+package com.taskscheduler.model;
 import java.time.LocalDate;
 public class Task implements Comparable<Task> {
     private String id;

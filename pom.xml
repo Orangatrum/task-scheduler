@@ -24,6 +24,12 @@
         <version>5.10.0</version>
         <scope>test</scope>
     </dependency>
+    <!-- Spring Boot Web Starter for REST APIs -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.2.3</version>
+    </dependency>
   </dependencies>
 
 </project>
